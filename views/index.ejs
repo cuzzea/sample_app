@@ -1,2 +1,226 @@
-<h1><%= title %></h1>
-<p>Welcome to <%= title %></p>
+<div id="wrapper">
+
+    <div id="header">
+	
+		<ul class="menu">
+			<li class="share">Share</li>
+			<li class="customize">Customize</li>
+		</ul>
+	
+		<div class="profile_info">
+			<div class="avatar_image"><img src="images/avatar_large.jpg" width="75" height="75" /></div>
+			<span class="user_name">Javin Ladish</span>
+			<span class="user_description">Founder at describe.me and epic awesome dude.</span>
+			<div class="social_link">
+				<a href="#" class="icon linkedin"></a>
+				<a href="#" class="icon facebook"></a>
+				<a href="#" class="icon twitter"></a>
+			</div>
+		</div>
+	
+		
+    
+    </div><!--end header-->
+    
+    <div id="content">
+	
+		<div class="cloud_wrapper">
+			<div id="cloud">
+				<span class="cloud_word size1">amazing </span><span class="cloud_word size5">artist </span><span class="cloud_word size1">brave </span><span class="cloud_word size1">cool </span><span class="cloud_word size2">entrepreneur </span><span class="cloud_word size1">friendly </span><span class="cloud_word size3">great </span><span class="cloud_word size5">honest </span><span class="cloud_word size2">hot </span><span class="cloud_word size4">illustrator </span><span class="cloud_word size3">intelligent </span><span class="cloud_word size1">Javin </span><span class="cloud_word size1">lover </span><span class="cloud_word size2">man </span><span class="cloud_word size1">neat </span><span class="cloud_word size3">Photoshop </span><span class="cloud_word size1">rad </span><span class="cloud_word size5">Wisconsin</span>
+			</div>		
+			
+			<form id="add_words_form">
+				<input type="text" id="tags_input" value="Add words to Javin's Cloud" />
+				<input type="submit" value="" id="tags_submit"/>
+				<span class="info">Separate words with commas.</span>
+				<label><input type="checkbox" />Submit as Anonymous</label>				
+			</form>
+		</div>
+	
+		<div class="panel tabs draggable hidden" id="customize">
+			<div class="panel_header">
+				<ul class="tabs nav">
+					<li class="current"><a href="#tabs-1">Info</a></li>
+					<li><a href="#tabs-2">Layout</a></li>
+					<li><a href="#tabs-3">Links</a></li>
+					<li><a href="#tabs-4">Words</a></li>
+				</ul>
+				<div class="panel_close"></div>
+			</div>
+			<div class="panel_content list-wrap">
+			
+				<div id="tabs-1" class="tab_content">
+			
+					<label>Your Name</label>
+					<input type="text"/>
+					<label>Your Title</label>
+					<input type="text" />
+					<label>Avatar</label>
+					<div class="avatar_uploader">
+						<div class="avatar_image"><img src="images/avatar_image.jpg" width="50" height="50" /></div>
+						<span class="grey_text">Select an image file:</span>
+						<input type="file" />												
+					</div>
+					
+														
+					<label class="inline">Disable Anonymous: <input type="checkbox" /></label>
+				
+				</div><!--end tab_content-->
+				
+				<div id="tabs-2" class="tab_content hidden">
+			
+					<label>Your Name</label>
+					<div class="layout_box colorpicker">						
+						<input type="text" value="#389EFF" class="izzyColor" id="color1" style="background-color: #389EFF; ">	
+					</div>
+
+					<label>Your Title</label>
+					<div class="layout_box colorpicker">
+						<input type="text" value="#389EFF" class="izzyColor" id="color2" style="background-color: #389EFF; ">	
+					</div>
+
+					<label>Background</label>
+					<div class="layout_box colorpicker" id="background">
+						<input type="text" value="#389EFF" class="izzyColor" id="color3" style="background-color: #389EFF; ">															
+					</div>
+					
+					<label>Cloud Words</label>
+					<div class="layout_box colorpicker">
+						<input type="text" value="#389EFF" class="izzyColor" id="color4" style="background-color: #389EFF; ">															
+					</div>
+					
+					<label>Words Font</label>
+					<select id="font">
+						<option>Select Font</option>
+						<option>Arial</option>
+						<option>Courier New</option>
+						<option>Comic Sans MS</option>
+						<option>Georgia</option>
+						<option>Impact</option>
+						<option>Lucida Console</option>
+						<option>Lucida Sans Unicode</option>
+						<option>MS Serif</option>
+						<option>Palatino Linotype</option>
+						<option>Verdana</option>
+						<option>Tahoma</option>
+						<option>Times New Roman</option>
+						<option>Trebuchet</option>
+					</select>
+					
+					<label>Font Size</label>
+					
+					<div class="slider_wrapper"><div class="slider" id="font_slider"><div class="slider_left"></div><div class="slider_right"></div></div></div>
+					
+					<label>Background Image</label>
+					
+					<div class="buttons_row">
+						<span class="left"><input type="file" /></span>
+						<span class="right remove_bg_img"><input type="reset" value="Clear" /></span>
+					</div>
+					
+					<label>Repeat</label>
+					
+					<span class="select_small last">
+						<select id="bg_repeat">
+							<option>Off</option>
+							<option>On</option>
+						</select>
+					</span>
+				
+				</div><!--end tab_content-->
+				
+				
+				<div id="tabs-3" class="tab_content hidden">
+					<div class="social_link">
+						<span class="icon linkedin"></span>
+						<input type="text" />
+					</div>
+					
+					<div class="social_link">
+						<span class="icon facebook"></span>
+						<input type="text" />
+					</div>
+					
+					<div class="social_link last">
+						<span class="icon twitter"></span>
+						<input type="text" />
+					</div>
+					
+				</div><!--end tab_content-->
+				
+				<div id="tabs-4" class="tab_content hidden">
+				
+					<p class="tag_cloud">
+						<span class="cloud_word size1">amazing, </span><span class="cloud_word size5">artist, </span><span class="cloud_word size1">brave, </span><span class="cloud_word size1">cool, </span><span class="cloud_word size2">entrepreneur, </span><span class="cloud_word size1">friendly, </span><span class="cloud_word size3">great, </span><span class="cloud_word size5">honest, </span><span class="cloud_word size2">hot, </span><span class="cloud_word size4">illustrator, </span><span class="cloud_word size3">intelligent, </span><span class="cloud_word size1">Javin, </span><span class="cloud_word size1">lover, </span><span class="cloud_word size2">man, </span><span class="cloud_word size1">neat, </span><span class="cloud_word size3">Photoshop, </span><span class="cloud_word size1">rad, </span><span class="cloud_word size5">Wisconsin</span>
+					</p>
+				
+				</div><!--end tab_content-->
+				
+				
+			</div><!--end panel_content-->			
+		</div><!--end panel-->
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="panel draggable hidden" id="share">
+			<div class="panel_header">
+				<ul class="tabs nav">
+					<li class="current"><a>Share</a></li>
+				</ul>
+				<div class="panel_close"></div>
+			</div>
+			<div class="panel_content list-wrap">
+			
+				<div id="tabs-1" class="tab_content">
+			
+					<label class="text_center">Want more words? Share!</label>
+					<input type="text"/>
+					<div class="share_icons">
+						<a class="icon email" href="#"></a>
+						<a class="icon facebook" href="#"></a>
+						<a class="icon twitter" href="#"></a>
+					</div>
+				
+				</div><!--end tab_content-->
+				
+			</div><!--end panel_content-->			
+		</div><!--end panel-->
+		
+		
+		
+		
+		
+		
+		
+    
+    </div><!--end content-->
+    
+    <div id="footer">
+	
+		<a href="#"><img class="message" src="images/get_your_own_cloud.png" width="410" height="30" /></a>
+    
+    </div><!--end footer-->
+
+</div><!--end wrapper-->
+
+
+<div class="cloud_tooltip" id="cloud_tooltip">
+	<div class="tooltip_box">
+		<a class="people">19 people</a> say this. <span class="remove_word">Remove</span>
+	</div>
+	<div class="tooltip_arrow"></div>	
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='javascripts/jquery-1.6.4.min.js'>\x3C/script>")</script>
+<script src="javascripts/jquery-ui-1.8.16.custom.min.js"></script>
+<script src="javascripts/jquery.uniform.min.js"></script>
+<script src="javascripts/general.js"></script>
+<script src="javascripts/izzyColor.js"></script>
+
